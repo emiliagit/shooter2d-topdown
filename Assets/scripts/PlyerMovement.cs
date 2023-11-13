@@ -14,6 +14,9 @@ public class PlyerMovement : MonoBehaviour
     private float limiteSuperior = 4.49f;
     private float limiteInferior = -4.42f;
 
+    
+
+
     public Camera cam;
 
     Vector2 mousePos;
@@ -41,6 +44,8 @@ public class PlyerMovement : MonoBehaviour
         transform.position = new Vector3(x, y, transform.position.z);
 
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+
+        
     }
 
     private void FixedUpdate()
@@ -51,7 +56,5 @@ public class PlyerMovement : MonoBehaviour
         float angle = Mathf.Atan2(lookDireccion.y, lookDireccion.x) * Mathf.Rad2Deg - 90f;
         rb.rotation = angle;
     }
-
-
 
 }
