@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemigoVerde : MonoBehaviour
+public class EnemyRed : MonoBehaviour
 {
 
     private Transform player;
-    [SerializeField] float speed = 1.5f;
+    [SerializeField] float speed = 3f;
 
     private void Start()
     {
